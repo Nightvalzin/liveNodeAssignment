@@ -1,0 +1,60 @@
+<% include partials/header.ejs %>
+
+<div class="mainSection">
+    <div class="sideSection">
+
+    </div>
+
+    <div class="centerSection">
+        <h1 id="topHeading">Welcome to the Website</h1>
+
+        <p>
+            This is my page that uses NodeJS along with the usual HTML, CSS and Javascript. Below you will find a button that
+            will take you to the page where you can use the NodeJS functionalities.
+        </p>
+
+        <p>
+            The button I have added below will allow you to use Javascript and the NodeJS to send data to and also output
+            that data.
+        </p>
+
+        <p><a href="/insert-data">Click here to go to the Insert Data page</a></p>
+
+        <script>
+            var socket = io();
+            var name = document.getElementById('entryName').nodeValue;
+            var newData = document.getElementById('entryData').nodeValue;
+
+            var outMessage = "Well done, " + name + "! You have entered in: " + newData + "!";
+
+            socket.on('fromServer', function(data) {
+                console.log('ON: fromServer');
+                console.log(data.message);
+            })
+            /*
+            document.getElementById('submitData').onclick =function() {myFunction};
+            
+            function myFunction() {
+                socket.emit('fromClient', {message: outMessage});
+                console.log('EMIT: fromClient');
+            }
+            */
+        </script>
+        
+
+    </div>
+
+    <div class="sideSection" id="sidebar">
+        <p>Navigation</p>
+
+        <ul>
+            <li><a href="voltindustri.com">Back to Home</a></li>
+            <li><a href="voltindustri.com/about.html">About Me</a></li>
+            <li><a href="voltindustri.com/mystories.html">My Stories</a></li>
+            <li><a href="voltindustri.com/assignments.html">Assignments</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<% include partials/footer.ejs %>

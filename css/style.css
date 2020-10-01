@@ -1,0 +1,148 @@
+/* Whole Content Styles */
+
+html {
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+}
+
+.siteLogo {
+    display: block;
+    margin-left: 40%;
+    border-bottom: solid skyblue 10px;
+    border-radius: 4px;
+    margin-bottom: 0.5%;
+}
+
+/* Main Site Content */
+
+.mainSection {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.sideSection {
+    width: 20%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.centerSection {
+    width: 80%;
+}
+
+/* Center Section Styles */
+
+#topHeading {
+    text-align: center;
+    color: royalblue;
+}
+
+.centerSection p {
+    margin-top: 1%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.centerSection form {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border: solid 3px black;
+}
+
+.centerSection form span {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 2%;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+.centerSection form input {
+    margin-bottom: 10px;
+}
+
+#submitData {
+    margin-left: 45%;
+    font-size: 16px;
+    height: 45px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+    color: white;
+    background-color: royalblue;
+    height: 300px;
+    margin-top: 5%;
+    margin-right: 1%;
+}
+
+#sidebar p {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+#sidebar ul {
+    padding-left: 65px;
+    color: white;
+}
+
+#sidebar li {
+    padding-bottom: 10px;
+}
+
+#sidebar ul li a {
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+.footer {
+    width: 100%;
+    background-color: royalblue;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer span {
+    display: inline-block;
+    color: white;
+    height: 2rem;
+    margin-top: 0.75%;
+    margin-left: 4%;
+}

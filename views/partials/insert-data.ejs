@@ -1,0 +1,11 @@
+<% include partials/header.ejs %>
+
+<p><a href="/">Go back home</a></p>
+
+<form method="POST" action="add-category">
+    <span>Name: </span><input type="text" name="name" id="entryName"><br>
+    <span>Enter a new category: </span><input type="text" name="entryData" id="entryData"><br>
+    <input type="submit" value="Submit Data" id="submitData">
+</form>
+
+<% include partials/footer.ejs %>
